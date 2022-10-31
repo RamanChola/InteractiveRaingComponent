@@ -1,0 +1,128 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #253f4b;
+    gap: 10px;
+    width: 290px;
+    border-radius: 8%;
+    padding: 25px;
+}
+
+.thankyou-card {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #253f4b;
+    width: 290px;
+    border-radius: 8%;
+    padding: 25px;
+}
+
+.circular-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 18px; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #365563;
+    color: #8eb1c2;
+    border-radius: 50%;
+    padding: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.rating-text{
+    background-color: #365563;
+    border-radius: 999em;   
+    padding:7px;
+    color:#e47200;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.rating-circular-icon-active {
+    background-color: #e47200;
+    color: #ffffff;
+}
+
+.rating-circular-icon-selected {
+    background-color: #8eb1c2;
+    color: #fff;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.thankyou-card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.card-description {
+    color: #8eb1c2;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.thankyou-card-description{
+    text-align: center;
+    margin-top: 0;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.submit-button {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e47200;
+    color: #ffffff;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #ffffff;
+    color: #e47200;
+}
+
+button:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+button:disabled:hover {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
